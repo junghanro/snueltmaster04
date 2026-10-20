@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI시대 살아남는 아이 교육법</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#0F1B3D;font-family:'Noto Sans KR',sans-serif;word-break:keep-all}
+.wrap{max-width:480px;margin:0 auto}
+section{display:block}
+section[aria-label="Main"]>div{min-height:100vh;min-height:100svh}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:#7DD3FC;z-index:10;transition:width .1s linear}
+#top{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));width:46px;height:46px;border-radius:50%;border:1px solid #334679;background:#0F1B3D;color:#fff;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s;z-index:10;padding:0;cursor:pointer}
+#top.on{opacity:.92;pointer-events:auto}
+.js section>div>div{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.js section>div>div.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js section>div>div{opacity:1;transform:none;transition:none}}
+body{padding-bottom:env(safe-area-inset-bottom)}
+</style>
+</head>
+<body>
+<div id="bar" aria-hidden="true"></div>
+<main class="wrap">
+<section aria-label="Main"><div style="width: 100%; box-sizing: border-box; padding: 40px 24px 32px; background: #0F1B3D; color: #FFFFFF; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; display: flex; flex-direction: column; justify-content: space-between">
+  <div style="display: flex; flex-direction: column; gap: 20px">
+    <div style="font-size: 13px; font-weight: 700; color: #7DD3FC; letter-spacing: 0.02em">SNU 영어교육마스터과정 4기 · 제1강</div>
+    <h1 style="margin: 0; font-size: 38px; line-height: 1.32; font-weight: 900">AI시대,<br><span style="color: #7DD3FC">살아남는 아이</span>로<br>키우는 교육법</h1>
+    <div style="font-size: 17px; line-height: 1.6; color: #E2E8F0; font-weight: 500">지식은 AI가 대신해도,<br>이 네 가지는 대체되지 않습니다.</div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+    <div style="background: #1B2A5C; border-radius: 20px; padding: 18px 16px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <span style="font-size: 13px; font-weight: 700; color: #7DD3FC">01</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7DD3FC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2V5z"/><path d="M8 7h6"/></svg>
+      </div>
+      <div style="font-size: 21px; font-weight: 900">문해력</div>
+      <div style="font-size: 13px; line-height: 1.55; color: #CBD5E1">이해하고, 판단하고,<br>활용하는 힘</div>
+    </div>
+    <div style="background: #1B2A5C; border-radius: 20px; padding: 18px 16px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <span style="font-size: 13px; font-weight: 700; color: #7DD3FC">02</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7DD3FC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0 0 12 3z"/></svg>
+      </div>
+      <div style="font-size: 21px; font-weight: 900">창의력</div>
+      <div style="font-size: 13px; line-height: 1.55; color: #CBD5E1">나만의 생각과<br>가치를 만드는 힘</div>
+    </div>
+    <div style="background: #1B2A5C; border-radius: 20px; padding: 18px 16px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <span style="font-size: 13px; font-weight: 700; color: #7DD3FC">03</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7DD3FC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7"/><path d="M12 17h.01"/></svg>
+      </div>
+      <div style="font-size: 21px; font-weight: 900">호기심</div>
+      <div style="font-size: 13px; line-height: 1.55; color: #CBD5E1">물음표에서<br>느낌표로 가는 힘</div>
+    </div>
+    <div style="background: #1B2A5C; border-radius: 20px; padding: 18px 16px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <span style="font-size: 13px; font-weight: 700; color: #7DD3FC">04</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7DD3FC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 19v-1a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v1"/><circle cx="10" cy="8" r="3"/><path d="M20 19v-1a3 3 0 0 0-2.5-3"/><path d="M15.5 5.2a3 3 0 0 1 0 5.6"/></svg>
+      </div>
+      <div style="font-size: 21px; font-weight: 900">사회성·끈기</div>
+      <div style="font-size: 13px; line-height: 1.55; color: #CBD5E1">함께하고,<br>포기하지 않는 힘</div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 6px; border-top: 1px solid #334679; padding-top: 18px">
+    <div style="font-size: 16px; font-weight: 700">신종호 교수님 · 서울대 교육학과</div>
+    <div style="font-size: 13px; color: #CBD5E1; line-height: 1.6">강의 내용 요약 정리 · 아래로 스크롤</div>
+  </div>
+</div></section>
+<section aria-label="Change"><div style="width: 100%; box-sizing: border-box; padding: 36px 20px 40px; background: #F4F8FC; color: #0F1B3D; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; display: flex; flex-direction: column; gap: 16px">
+
+  <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 4px 8px">
+    <div style="font-size: 13px; font-weight: 700; color: #0369A1">01 · 변화 진단</div>
+    <h2 style="margin: 0; font-size: 30px; line-height: 1.35; font-weight: 900">왜 지금<br>바뀌어야 할까요?</h2>
+    <div style="font-size: 15px; line-height: 1.65; color: #475569">변화는 이미 로켓처럼 빠르게 오고 있습니다.<br>챗GPT가 나온 지 4년이 다 되어 갑니다.</div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+    <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 18px 16px; display: flex; flex-direction: column; gap: 8px">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0369A1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M11 18h2"/></svg>
+      <div style="font-size: 17px; font-weight: 900">스마트기기</div>
+      <div style="font-size: 13.5px; line-height: 1.6; color: #475569">오프라인 활동을<br>디지털 공간으로<br>확장했습니다.</div>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 18px 16px; display: flex; flex-direction: column; gap: 8px">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0369A1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 17v4"/><path d="M17 19h4"/></svg>
+      <div style="font-size: 17px; font-weight: 900">생성형 AI</div>
+      <div style="font-size: 13.5px; line-height: 1.6; color: #475569">일하는 방식<br>자체를 바꾸는<br>중입니다.</div>
+    </div>
+  </div>
+
+  <div style="background: #0F1B3D; color: #FFFFFF; border-radius: 20px; padding: 20px 14px; display: flex; align-items: center; justify-content: space-between; gap: 6px">
+    <div style="flex: 1; text-align: center; font-size: 14px; font-weight: 700; line-height: 1.5">일하는 방식<br>변화</div>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7DD3FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+    <div style="flex: 1; text-align: center; font-size: 14px; font-weight: 700; line-height: 1.5">요구되는<br>능력 변화</div>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7DD3FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+    <div style="flex: 1; text-align: center; font-size: 14px; font-weight: 900; line-height: 1.5; color: #7DD3FC">인재상<br>변화</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 20px 18px; display: flex; flex-direction: column; gap: 4px">
+    <div style="font-size: 17px; font-weight: 900; margin-bottom: 10px">변화의 신호들</div>
+
+    <div style="display: flex; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid #E5EDF6">
+      <div style="width: 78px; flex: none; font-size: 22px; font-weight: 900; color: #0369A1; line-height: 1.2">2023</div>
+      <div style="font-size: 14px; line-height: 1.6"><b>〈네이처〉 '네이처10'</b><br><span style="color: #475569">챗GPT가 비인간으로는 처음 선정되었습니다.</span></div>
+    </div>
+    <div style="display: flex; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid #E5EDF6">
+      <div style="width: 78px; flex: none; font-size: 22px; font-weight: 900; color: #0369A1; line-height: 1.2">84%</div>
+      <div style="font-size: 14px; line-height: 1.6"><b>구글 알파지오메트리2</b><br><span style="color: #475569">국제수학올림피아드 기하 문제를 84% 해결했습니다. (금메달리스트급)</span></div>
+    </div>
+    <div style="display: flex; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid #E5EDF6">
+      <div style="width: 78px; flex: none; font-size: 20px; font-weight: 900; color: #0369A1; line-height: 1.2">상위 2%</div>
+      <div style="font-size: 14px; line-height: 1.6"><b>텍사스 알파스쿨</b><br><span style="color: #475569">AI 튜터 학습지원으로 전국 상위 2% 학교가 되었다고 보도되었습니다.</span></div>
+    </div>
+    <div style="display: flex; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid #E5EDF6">
+      <div style="width: 78px; flex: none; font-size: 18px; font-weight: 900; color: #0369A1; line-height: 1.2">OpenAI<br>연구원</div>
+      <div style="font-size: 14px; line-height: 1.6"><b>가브리엘 피터슨</b><br><span style="color: #475569">고등학교를 그만두고 챗GPT로 공부해 OpenAI 연구원이 되었습니다.</span></div>
+    </div>
+    <div style="display: flex; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid #E5EDF6">
+      <div style="width: 78px; flex: none; font-size: 22px; font-weight: 900; color: #0369A1; line-height: 1.2">2025</div>
+      <div style="font-size: 14px; line-height: 1.6"><b>한국 AI 디지털교과서(AIDT) 도입</b><br><span style="color: #475569">ChatGPT '스터디 모드'도 학생용으로 등장했습니다.</span></div>
+    </div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 20px 18px; display: flex; flex-direction: column; gap: 12px">
+    <div style="font-size: 17px; font-weight: 900">증강교과서 <span style="font-size: 12.5px; font-weight: 500; color: #475569">구글 Learn Your Way</span></div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">같은 원리를 학생의 <b style="color: #0F1B3D">관심사와 수준</b>에 맞춰 바꿔 줍니다.</div>
+    <div style="background: #E0F2FE; border-radius: 14px; padding: 12px; text-align: center; font-size: 14px; font-weight: 700; color: #0C4A6E">같은 원문 · 뉴턴의 제3법칙</div>
+    <div style="display: flex; justify-content: space-around" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0369A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M6 13l6 6 6-6"/></svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0369A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M6 13l6 6 6-6"/></svg>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+      <div style="background: #FFF7ED; border-radius: 14px; padding: 14px 12px; font-size: 13.5px; line-height: 1.6"><b style="color: #9A3412">고2 · 농구 좋아함</b><br>농구공이 바닥을 밀고, 바닥이 공을 밀어 올립니다.</div>
+      <div style="background: #FDF2F8; border-radius: 14px; padding: 14px 12px; font-size: 13.5px; line-height: 1.6"><b style="color: #9D174D">초5 · 그림 좋아함</b><br>붓이 캔버스를 누르면, 캔버스도 붓을 밀어냅니다.</div>
+    </div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 20px 18px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 17px; font-weight: 900">교사의 역할이 바뀝니다</div>
+    <div style="display: flex; align-items: center; gap: 8px">
+      <div style="flex: 1; background: #F1F5F9; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 700; color: #475569">지식 전달자</div>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0369A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      <div style="flex: 1; background: #0F1B3D; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 900; color: #FFFFFF">디자이너 · 코치</div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">대학에서는 손 들고 질문하는 학생이 사라지고 있습니다. AI가 더 쉽고, 더 자세하고, 화내지 않고 알려 주기 때문입니다.</div>
+  </div>
+
+  <div style="background: #0F1B3D; color: #FFFFFF; border-radius: 20px; padding: 24px 20px; display: flex; flex-direction: column; gap: 12px">
+    <div style="font-size: 20px; line-height: 1.55; font-weight: 700">"AI의 영향은<br>불이나 전기보다<br><span style="color: #7DD3FC">더 심대할 것이다.</span>"</div>
+    <div style="font-size: 13px; color: #CBD5E1">순다르 피차이 · 구글 CEO · 2020년 1월 WEF</div>
+  </div>
+</div></section>
+<section aria-label="Map"><div style="width: 100%; box-sizing: border-box; padding: 36px 20px 40px; background: #F4F8FC; color: #0F1B3D; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; display: flex; flex-direction: column; gap: 14px">
+
+  <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 4px 6px">
+    <div style="font-size: 13px; font-weight: 700; color: #0369A1">02 · 미래 역량 지도</div>
+    <h2 style="margin: 0; font-size: 30px; line-height: 1.35; font-weight: 900">2016 세계경제포럼<br>16가지 미래 역량</h2>
+    <div style="font-size: 15px; line-height: 1.65; color: #475569">이 지도 안에서 오늘 다룰 역량을<br><b style="color: #0F1B3D">진하게</b> 표시했습니다.</div>
+  </div>
+
+  <div style="background: #F3E8FF; border-radius: 20px; padding: 18px 16px; display: flex; flex-direction: column; gap: 12px">
+    <div style="display: flex; justify-content: space-between; align-items: baseline">
+      <div style="font-size: 16px; font-weight: 900; color: #581C87">기초 소양</div>
+      <div style="font-size: 12px; color: #6B21A8">Foundational Literacies</div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px">
+      <span style="background: #7E22CE; color: #FFFFFF; font-size: 14px; font-weight: 700; padding: 8px 12px; border-radius: 99px">1 문해력</span>
+      <span style="background: #FFFFFF; color: #581C87; font-size: 14px; padding: 8px 12px; border-radius: 99px">2 수리력</span>
+      <span style="background: #FFFFFF; color: #581C87; font-size: 14px; padding: 8px 12px; border-radius: 99px">3 과학 소양</span>
+      <span style="background: #FFFFFF; color: #581C87; font-size: 14px; padding: 8px 12px; border-radius: 99px">4 ICT 소양</span>
+      <span style="background: #FFFFFF; color: #581C87; font-size: 14px; padding: 8px 12px; border-radius: 99px">5 금융 소양</span>
+      <span style="background: #FFFFFF; color: #581C87; font-size: 14px; padding: 8px 12px; border-radius: 99px">6 문화·시민 소양</span>
+    </div>
+  </div>
+
+  <div style="background: #FEF3C7; border-radius: 20px; padding: 18px 16px; display: flex; flex-direction: column; gap: 12px">
+    <div style="display: flex; justify-content: space-between; align-items: baseline">
+      <div style="font-size: 16px; font-weight: 900; color: #78350F">역량</div>
+      <div style="font-size: 12px; color: #92400E">Competencies</div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px">
+      <span style="background: #FFFFFF; color: #78350F; font-size: 14px; padding: 8px 12px; border-radius: 99px">7 비판적 사고·문제해결</span>
+      <span style="background: #B45309; color: #FFFFFF; font-size: 14px; font-weight: 700; padding: 8px 12px; border-radius: 99px">8 창의성</span>
+      <span style="background: #FFFFFF; color: #78350F; font-size: 14px; padding: 8px 12px; border-radius: 99px">9 의사소통</span>
+      <span style="background: #FFFFFF; color: #78350F; font-size: 14px; padding: 8px 12px; border-radius: 99px">10 협업</span>
+    </div>
+  </div>
+
+  <div style="background: #E0F2FE; border-radius: 20px; padding: 18px 16px; display: flex; flex-direction: column; gap: 12px">
+    <div style="display: flex; justify-content: space-between; align-items: baseline">
+      <div style="font-size: 16px; font-weight: 900; color: #0C4A6E">인성 특성</div>
+      <div style="font-size: 12px; color: #075985">Character Qualities</div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px">
+      <span style="background: #0369A1; color: #FFFFFF; font-size: 14px; font-weight: 700; padding: 8px 12px; border-radius: 99px">11 호기심</span>
+      <span style="background: #FFFFFF; color: #0C4A6E; font-size: 14px; padding: 8px 12px; border-radius: 99px">12 자기주도성</span>
+      <span style="background: #0369A1; color: #FFFFFF; font-size: 14px; font-weight: 700; padding: 8px 12px; border-radius: 99px">13 지속력(끈기)</span>
+      <span style="background: #FFFFFF; color: #0C4A6E; font-size: 14px; padding: 8px 12px; border-radius: 99px">14 적응력</span>
+      <span style="background: #FFFFFF; color: #0C4A6E; font-size: 14px; padding: 8px 12px; border-radius: 99px">15 리더십</span>
+      <span style="background: #FFFFFF; color: #0C4A6E; font-size: 14px; padding: 8px 12px; border-radius: 99px">16 사회·문화 인식</span>
+    </div>
+  </div>
+
+  <div style="background: #0F1B3D; color: #FFFFFF; border-radius: 16px; padding: 14px 16px; text-align: center; font-size: 14px; font-weight: 700">바탕 · 평생학습 (Lifelong Learning)</div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 18px 16px; display: flex; flex-direction: column; gap: 10px">
+    <div style="font-size: 15px; font-weight: 900">오늘의 4대 역량</div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; font-size: 14px; line-height: 1.5">
+      <div><b style="color: #7E22CE">01</b> 문해력</div>
+      <div><b style="color: #B45309">02</b> 창의력</div>
+      <div><b style="color: #0369A1">03</b> 호기심</div>
+      <div><b style="color: #0369A1">04</b> 사회성(인성)과 끈기</div>
+    </div>
+  </div>
+</div></section>
+<section aria-label="Literacy"><div style="width: 100%; box-sizing: border-box; padding: 36px 20px 40px; background: #F4F8FC; color: #0F1B3D; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; display: flex; flex-direction: column; gap: 16px">
+
+  <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 4px 8px">
+    <div style="font-size: 13px; font-weight: 700; color: #7E22CE">03 · 첫 번째 이야기</div>
+    <h2 style="margin: 0; font-size: 30px; line-height: 1.35; font-weight: 900">문해력을<br>키웁시다</h2>
+    <div style="font-size: 15px; line-height: 1.65; color: #475569">문해력은 '읽고 쓰기'가 아니라<br><b style="color: #0F1B3D">이해 · 판단 · 활용</b>하는 힘입니다.</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 17px; font-weight: 900">OECD의 문해력</div>
+    <div style="display: flex; align-items: center; gap: 4px">
+      <div style="flex: 1; min-width: 0; background: #F3E8FF; border-radius: 14px; padding: 14px 2px; text-align: center"><div style="font-size: 15px; font-weight: 900; color: #581C87">이해</div><div style="font-size: 12px; color: #6B21A8; margin-top: 2px; line-height: 1.4">읽기</div></div>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7E22CE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      <div style="flex: 1; min-width: 0; background: #F3E8FF; border-radius: 14px; padding: 14px 2px; text-align: center"><div style="font-size: 15px; font-weight: 900; color: #581C87">평가</div><div style="font-size: 12px; color: #6B21A8; margin-top: 2px; line-height: 1.4">비판적<br>사고</div></div>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7E22CE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      <div style="flex: 1; min-width: 0; background: #F3E8FF; border-radius: 14px; padding: 14px 2px; text-align: center"><div style="font-size: 15px; font-weight: 900; color: #581C87">활용</div><div style="font-size: 12px; color: #6B21A8; margin-top: 2px; line-height: 1.4">쓰기<br>·생산</div></div>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7E22CE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      <div style="flex: 1; min-width: 0; background: #7E22CE; border-radius: 14px; padding: 14px 2px; text-align: center"><div style="font-size: 15px; font-weight: 900; color: #FFFFFF">참여</div><div style="font-size: 12px; color: #F3E8FF; margin-top: 2px; line-height: 1.4">사회와<br>연결</div></div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">사회 참여, 목표 성취, 지식과 잠재력 계발을 위해 텍스트를 다루는 능력입니다.</div>
+    <div style="background: #0F1B3D; color: #FFFFFF; border-radius: 14px; padding: 14px; text-align: center; font-size: 14px; font-weight: 700; line-height: 1.6">결국 문해력 = <span style="color: #7DD3FC">메타인지</span> = <span style="color: #7DD3FC">자기주도학습능력</span></div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 12px">
+    <div style="font-size: 17px; font-weight: 900">지식은 눈덩이처럼 불어납니다</div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">매일 두 배로 저금하면? (1원 → 2원 → 4원 …)</div>
+    <div style="display: flex; align-items: flex-end; gap: 10px; height: 230px; padding-top: 8px">
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; height: 100%"><div style="font-size: 12.5px; font-weight: 700; text-align: center; line-height: 1.4">1원</div><div style="width: 100%; height: 12px; background: #DDD6FE; border-radius: 8px 8px 0 0"></div><div style="font-size: 12px; color: #475569">1일</div></div>
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; height: 100%"><div style="font-size: 12.5px; font-weight: 700; text-align: center; line-height: 1.4">512원</div><div style="width: 100%; height: 36px; background: #C4B5FD; border-radius: 8px 8px 0 0"></div><div style="font-size: 12px; color: #475569">10일</div></div>
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; height: 100%"><div style="font-size: 12.5px; font-weight: 700; text-align: center; line-height: 1.4">약<br>52만 원</div><div style="width: 100%; height: 84px; background: #A78BFA; border-radius: 8px 8px 0 0"></div><div style="font-size: 12px; color: #475569">20일</div></div>
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; height: 100%"><div style="font-size: 12.5px; font-weight: 900; text-align: center; line-height: 1.4; color: #581C87">약<br>10.7억 원</div><div style="width: 100%; height: 130px; background: #7E22CE; border-radius: 8px 8px 0 0"></div><div style="font-size: 12px; color: #475569">31일</div></div>
+    </div>
+    <div style="font-size: 12.5px; color: #475569; line-height: 1.6">※ 막대 높이는 이해를 돕기 위한 표현입니다.</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 12px">
+    <div style="font-size: 17px; font-weight: 900">지식의 반감기</div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">지식의 절반이 새 지식으로 바뀌는 데 걸리는 시간(년)</div>
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <div style="display: flex; align-items: center; gap: 8px"><div style="width: 40px; flex: none; font-size: 13.5px">물리학</div><div style="flex: 1; background: #F3E8FF; border-radius: 99px; height: 26px"><div style="width: 100%; height: 100%; background: #7E22CE; border-radius: 99px; color: #FFFFFF; font-size: 12.5px; font-weight: 700; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box">13.07</div></div></div>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="width: 40px; flex: none; font-size: 13.5px">경제학</div><div style="flex: 1; background: #F3E8FF; border-radius: 99px; height: 26px"><div style="width: 71.8%; height: 100%; background: #7E22CE; border-radius: 99px; color: #FFFFFF; font-size: 12.5px; font-weight: 700; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box">9.38</div></div></div>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="width: 40px; flex: none; font-size: 13.5px">수학</div><div style="flex: 1; background: #F3E8FF; border-radius: 99px; height: 26px"><div style="width: 70.2%; height: 100%; background: #7E22CE; border-radius: 99px; color: #FFFFFF; font-size: 12.5px; font-weight: 700; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box">9.17</div></div></div>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="width: 40px; flex: none; font-size: 13.5px">종교학</div><div style="flex: 1; background: #F3E8FF; border-radius: 99px; height: 26px"><div style="width: 67%; height: 100%; background: #7E22CE; border-radius: 99px; color: #FFFFFF; font-size: 12.5px; font-weight: 700; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box">8.76</div></div></div>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="width: 40px; flex: none; font-size: 13.5px">심리학</div><div style="flex: 1; background: #F3E8FF; border-radius: 99px; height: 26px"><div style="width: 54.7%; height: 100%; background: #7E22CE; border-radius: 99px; color: #FFFFFF; font-size: 12.5px; font-weight: 700; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box">7.15</div></div></div>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="width: 40px; flex: none; font-size: 13.5px">역사학</div><div style="flex: 1; background: #F3E8FF; border-radius: 99px; height: 26px"><div style="width: 54.6%; height: 100%; background: #7E22CE; border-radius: 99px; color: #FFFFFF; font-size: 12.5px; font-weight: 700; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; box-sizing: border-box">7.13</div></div></div>
+    </div>
+    <div style="font-size: 12.5px; color: #475569; line-height: 1.6">사뮤엘 아베스만, 『지식의 반감기』 (2014)</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 17px; font-weight: 900">학위 사회에서 경험 사회로</div>
+    <div style="display: flex; align-items: center; gap: 8px">
+      <div style="flex: 1; background: #F1F5F9; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 700; color: #475569; line-height: 1.5">"어디 나왔어?"</div>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7E22CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      <div style="flex: 1; background: #7E22CE; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 900; color: #FFFFFF; line-height: 1.5">"해 본 적 있어?<br>할 수 있어?"</div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">구글도 학력보다 <b style="color: #0F1B3D">전문성과 경험</b>을 봅니다. 평균적으로 다 잘하는 학생보다 <b style="color: #0F1B3D">한 분야에서 뛰어난 학생</b>에게 기회를 줘야 합니다.</div>
+  </div>
+
+  <div style="background: #0F1B3D; color: #FFFFFF; border-radius: 20px; padding: 24px 20px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 12.5px; font-weight: 700; color: #7DD3FC">교사가 가르쳐야 할 것은</div>
+    <div style="font-size: 17px; line-height: 1.7; font-weight: 500">'더 많은 정보'가 아니라<br><b style="color: #7DD3FC">이해하는 능력</b>,<br><b style="color: #7DD3FC">중요한 것을 가려내는 능력</b>,<br><b style="color: #7DD3FC">조각을 모아 큰 그림을 그리는 능력</b>입니다.</div>
+    <div style="font-size: 13px; color: #CBD5E1">유발 하라리 · 『21세기를 위한 21가지 제언』</div>
+  </div>
+
+  <div style="background: #F3E8FF; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 17px; font-weight: 900; color: #581C87">영어교육에 주는 시사점</div>
+    <div style="display: flex; align-items: center; gap: 8px">
+      <div style="flex: 1; background: #FFFFFF; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 700; color: #475569; line-height: 1.5">읽고 풀고<br>정답 찾기</div>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7E22CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      <div style="flex: 1; background: #7E22CE; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 900; color: #FFFFFF; line-height: 1.5">Reading<br>is Thinking</div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.65; color: #3B0764">
+      <div>기능만 가르친 속독학원이 사라진 것처럼, 기능 수업만으로는 부족합니다.</div>
+      <div>기능적인 영어 학습은 AI와도 혼자 할 수 있게 됩니다.</div>
+      <div>학원은 <b>읽고 생각을 나누는 시간</b>을 특성화해야 합니다.</div>
+    </div>
+  </div>
+</div></section>
+<section aria-label="Creativity"><div style="width: 100%; box-sizing: border-box; padding: 36px 20px 40px; background: #FFFBF3; color: #0F1B3D; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; display: flex; flex-direction: column; gap: 16px">
+
+  <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 4px 8px">
+    <div style="font-size: 13px; font-weight: 700; color: #B45309">04 · 두 번째 이야기</div>
+    <h2 style="margin: 0; font-size: 30px; line-height: 1.35; font-weight: 900">창의력을<br>키웁시다</h2>
+    <div style="font-size: 15px; line-height: 1.65; color: #475569">왜 '지식'이 아니라<br><b style="color: #0F1B3D">'창의력'</b>일까요?</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #EADFC9; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 12px">
+    <div style="font-size: 17px; font-weight: 900">블룸의 분류 · AI와 사람</div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <div style="display: flex; justify-content: space-between; align-items: center; background: #B45309; color: #FFFFFF; border-radius: 12px; padding: 12px 14px"><span style="font-size: 15px; font-weight: 900">6 창조</span><span style="font-size: 12.5px">사람에게 남는 영역</span></div>
+      <div style="display: flex; justify-content: space-between; align-items: center; background: #B45309; color: #FFFFFF; border-radius: 12px; padding: 12px 14px"><span style="font-size: 15px; font-weight: 900">5 평가</span><span style="font-size: 12.5px">사람에게 남는 영역</span></div>
+      <div style="display: flex; justify-content: space-between; align-items: center; background: #F1F5F9; color: #475569; border-radius: 12px; padding: 12px 14px"><span style="font-size: 14.5px; font-weight: 700">4 분석</span><span style="font-size: 12.5px">AI가 잘함</span></div>
+      <div style="display: flex; justify-content: space-between; align-items: center; background: #F1F5F9; color: #475569; border-radius: 12px; padding: 12px 14px"><span style="font-size: 14.5px; font-weight: 700">3 적용</span><span style="font-size: 12.5px">AI가 잘함</span></div>
+      <div style="display: flex; justify-content: space-between; align-items: center; background: #F1F5F9; color: #475569; border-radius: 12px; padding: 12px 14px"><span style="font-size: 14.5px; font-weight: 700">2 이해</span><span style="font-size: 12.5px">AI가 잘함</span></div>
+      <div style="display: flex; justify-content: space-between; align-items: center; background: #F1F5F9; color: #475569; border-radius: 12px; padding: 12px 14px"><span style="font-size: 14.5px; font-weight: 700">1 기억</span><span style="font-size: 12.5px">AI가 잘함</span></div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.65; color: #475569">
+      <div>IBM 왓슨(2011)과 엑소브레인(2016)이 퀴즈왕을 이겼습니다. 엑소브레인은 책 약 12만 권 분량을 학습했습니다.</div>
+      <div>AI 결과물은 그럴듯하지만 <b style="color: #0F1B3D">"평균의 조각"</b>입니다.</div>
+      <div>새로운 것은 <b style="color: #0F1B3D">직접 부딪히는 경험</b>에서 나옵니다.</div>
+    </div>
+  </div>
+
+  <div style="background: #FEF3C7; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 17px; font-weight: 900; color: #78350F">창의성은 어디서 올까요?</div>
+    <div style="font-size: 14px; line-height: 1.65; color: #78350F">"새롭고 유용한 것"이라는 정의는 결과를 <b>나중에 평가</b>하는 기준일 뿐, 어디서 오는지는 알려 주지 못합니다.</div>
+    <div style="display: flex; align-items: center; gap: 6px">
+      <div style="flex: 1; background: #FFFFFF; border-radius: 14px; padding: 14px 4px; text-align: center; font-size: 14px; font-weight: 700; color: #78350F; line-height: 1.5">왜 그럴까?</div>
+      <span style="font-size: 20px; font-weight: 900; color: #B45309">+</span>
+      <div style="flex: 1; background: #FFFFFF; border-radius: 14px; padding: 14px 4px; text-align: center; font-size: 14px; font-weight: 700; color: #78350F; line-height: 1.5">나는 이렇게<br>생각한다</div>
+      <span style="font-size: 20px; font-weight: 900; color: #B45309">=</span>
+      <div style="flex: 1.2; background: #B45309; border-radius: 14px; padding: 14px 4px; text-align: center; font-size: 14px; font-weight: 900; color: #FFFFFF; line-height: 1.5">나만의<br>생각과 가치</div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #78350F">혁신가는 남의 말을 그대로 받아들이지 않고, 자기 관점을 끝까지 추구한 사람들입니다.</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #EADFC9; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 12.5px; font-weight: 700; color: #B45309">사례 1</div>
+    <div style="font-size: 17px; font-weight: 900; line-height: 1.5; margin-top: -8px">카너먼과 트버스키</div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">경제학자가 아닌 <b style="color: #0F1B3D">심리학자</b>인데 행동경제학을 열었고, 카너먼은 노벨경제학상을 받았습니다.</div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+      <div style="background: #F1F5F9; border-radius: 14px; padding: 14px 12px; font-size: 13.5px; line-height: 1.6; color: #475569"><b style="color: #0F1B3D">전통 경제학</b><br>사람은 합리적으로 결정한다</div>
+      <div style="background: #FEF3C7; border-radius: 14px; padding: 14px 12px; font-size: 13.5px; line-height: 1.6; color: #78350F"><b>행동경제학</b><br>감정 같은 심리 요인이 크게 영향을 준다</div>
+    </div>
+    <div style="font-size: 13.5px; line-height: 1.65; color: #475569">예) 10만 원 나누기 게임에서 너무 불공정한(9:1) 제안은, 손해를 보더라도 거절하는 사람이 많습니다.</div>
+    <div style="font-size: 13px; color: #475569">추천 도서 · 『생각에 관한 생각』</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #EADFC9; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 12.5px; font-weight: 700; color: #B45309">사례 2</div>
+    <div style="font-size: 17px; font-weight: 900; line-height: 1.5; margin-top: -8px">유대인의 토론식 교육 (하브루타)</div>
+    <div style="display: flex; align-items: center; gap: 16px">
+      <div style="width: 112px; height: 112px; flex: none; border-radius: 50%; background: conic-gradient(#B45309 0 22.3%, #F1E6D2 0); display: flex; align-items: center; justify-content: center" role="img" aria-label="노벨상 수상자 중 유대인 비중 22.3%">
+        <div style="width: 76px; height: 76px; border-radius: 50%; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center"><span style="font-size: 20px; font-weight: 900; color: #B45309; line-height: 1.1">22.3%</span><span style="font-size: 11px; color: #475569">노벨상</span></div>
+      </div>
+      <div style="font-size: 14px; line-height: 1.65">세계 인구의 <b style="color: #B45309">0.19%</b>인데<br>노벨상 수상자의 <b style="color: #B45309">22.3%</b><br><span style="font-size: 12px; color: #475569">(교안 그래프 기준)</span></div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">남의 말을 그대로 받아들이지 않고, <b style="color: #0F1B3D">내 의미로 해석할 때까지</b> 토론합니다.</div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+      <div style="background: #F1F5F9; border-radius: 14px; padding: 14px 12px; font-size: 13.5px; line-height: 1.6; color: #475569"><b style="color: #0F1B3D">한국 부모</b><br>"오늘 뭐 배웠니?"</div>
+      <div style="background: #FEF3C7; border-radius: 14px; padding: 14px 12px; font-size: 13.5px; line-height: 1.6; color: #78350F"><b>유대인 부모</b><br>"오늘 무슨 질문했니? 뭐가 제일 재밌었니?"</div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">핵심은 '무엇을 배웠나'보다 <b style="color: #0F1B3D">'나의 경험과 생각'</b>을 묻는 것입니다.</div>
+  </div>
+</div></section>
+<section aria-label="Curiosity"><div style="width: 100%; box-sizing: border-box; padding: 36px 20px 40px; background: #F2FAF6; color: #0F1B3D; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; display: flex; flex-direction: column; gap: 16px">
+
+  <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 4px 8px">
+    <div style="font-size: 13px; font-weight: 700; color: #047857">05 · 세 번째 이야기</div>
+    <h2 style="margin: 0; font-size: 30px; line-height: 1.35; font-weight: 900">호기심이<br>성장 자산입니다</h2>
+    <div style="font-size: 15px; line-height: 1.65; color: #475569">앞으로는 지식 격차가 아니라<br><b style="color: #0F1B3D">호기심 격차</b>의 시대입니다.</div>
+  </div>
+
+  <div style="background: #064E3B; color: #FFFFFF; border-radius: 20px; padding: 24px 20px; display: flex; flex-direction: column; gap: 12px">
+    <div style="font-size: 20px; line-height: 1.6; font-weight: 700">"내 삶은 매일,<br><span style="color: #6EE7B7">물음표와 느낌표</span>를<br>오고 갔다."</div>
+    <div style="font-size: 13px; color: #D1FAE5">이어령</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #D5EBDF; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 17px; font-weight: 900">물음표에서 느낌표로</div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; text-align: center">
+      <div style="background: #D1FAE5; border-radius: 16px; padding: 16px 4px"><div style="font-size: 44px; font-weight: 900; line-height: 1; color: #047857">?</div><div style="font-size: 13px; font-weight: 700; margin-top: 8px; color: #064E3B">궁금하다</div></div>
+      <div style="background: #FEF3C7; border-radius: 16px; padding: 16px 4px"><div style="font-size: 44px; font-weight: 900; line-height: 1; color: #B45309">!</div><div style="font-size: 13px; font-weight: 700; margin-top: 8px; color: #78350F">아하!</div></div>
+      <div style="background: #F1F5F9; border-radius: 16px; padding: 16px 4px"><div style="font-size: 44px; font-weight: 900; line-height: 1; color: #64748B">.</div><div style="font-size: 13px; font-weight: 700; margin-top: 8px; color: #475569">답만 알려줌</div></div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">좋은 교육은 <b style="color: #0F1B3D">? → !</b> 로 이어집니다. 답을 알려 주고 끝나는 마침표(.) 교육은 더 생각하지 못하게 막습니다.</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #D5EBDF; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 17px; font-weight: 900">어떤 질문이 호기심을 깨울까요?</div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+      <div style="background: #D1FAE5; border-radius: 14px; padding: 14px 12px; font-size: 13.5px; line-height: 1.6; color: #064E3B"><b style="font-size: 15px">Why · How<br>What if</b><br>생각을 넓히고 호기심을 자극합니다.</div>
+      <div style="background: #F1F5F9; border-radius: 14px; padding: 14px 12px; font-size: 13.5px; line-height: 1.6; color: #475569"><b style="font-size: 15px; color: #0F1B3D">What</b><br><br>사실 확인 질문은 자극이 약합니다.</div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">사실을 아는 것보다 <b style="color: #0F1B3D">알고 싶어 하는 마음</b>이 더 중요합니다. "대형 초식동물이 모두 사라진다면?" 같은 엉뚱한 질문도 정답과 상관없이 좋은 경험이 됩니다.</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #D5EBDF; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 6px">
+    <div style="font-size: 17px; font-weight: 900; margin-bottom: 6px">호기심을 깨우는 질문 5가지</div>
+    <div style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-top: 1px solid #E3F1E9"><span style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #047857; color: #FFFFFF; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center">1</span><span style="font-size: 14.5px; line-height: 1.6">어미 제비는 먹이를 먹은 새끼와 먹지 않은 새끼를 어떻게 구별할까?</span></div>
+    <div style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-top: 1px solid #E3F1E9"><span style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #047857; color: #FFFFFF; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center">2</span><span style="font-size: 14.5px; line-height: 1.6">왜 여자 정장과 남자 정장은 단추가 반대쪽에 달려 있을까?</span></div>
+    <div style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-top: 1px solid #E3F1E9"><span style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #047857; color: #FFFFFF; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center">3</span><span style="font-size: 14.5px; line-height: 1.6">왜 주유구는 차에 따라 오른쪽 또는 왼쪽에 있을까?</span></div>
+    <div style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-top: 1px solid #E3F1E9"><span style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #047857; color: #FFFFFF; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center">4</span><span style="font-size: 14.5px; line-height: 1.6">고래는 어떻게 물속에서 잠을 잘까?</span></div>
+    <div style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-top: 1px solid #E3F1E9"><span style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #047857; color: #FFFFFF; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center">5</span><span style="font-size: 14.5px; line-height: 1.6">왜 동전은 가라앉는데 더 무거운 유람선은 떠 있을까?</span></div>
+  </div>
+
+  <div style="background: #D1FAE5; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 17px; font-weight: 900; color: #064E3B">수업은 질문으로 시작합니다</div>
+    <div style="display: flex; align-items: center; gap: 8px">
+      <div style="flex: 1; background: #FFFFFF; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 700; color: #475569; line-height: 1.5">개념 설명부터<br>시작</div>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#047857" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      <div style="flex: 1; background: #047857; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 900; color: #FFFFFF; line-height: 1.5">질문으로<br>시작</div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #064E3B">예) <b>"AI는 감정을 가질 수 있을까?"</b> 로 시작해서 '감정이란 무엇인가'로 넓혀 갑니다. 감정의 정의부터 설명하면 재미가 없고, 내 경험으로 이어지지 않습니다.</div>
+  </div>
+</div></section>
+<section aria-label="Social"><div style="width: 100%; box-sizing: border-box; padding: 36px 20px 40px; background: #FFF6FA; color: #0F1B3D; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; display: flex; flex-direction: column; gap: 16px">
+
+  <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 4px 8px">
+    <div style="font-size: 13px; font-weight: 700; color: #BE185D">06 · 네 번째 이야기 ①</div>
+    <h2 style="margin: 0; font-size: 30px; line-height: 1.35; font-weight: 900">사회성(인성)</h2>
+    <div style="font-size: 15px; line-height: 1.65; color: #475569">하이테크 시대일수록<br><b style="color: #0F1B3D">사람과 교감하는 힘</b>이 중요해집니다.</div>
+  </div>
+
+  <div style="background: #831843; color: #FFFFFF; border-radius: 20px; padding: 24px 20px; display: flex; flex-direction: column; gap: 12px">
+    <div style="font-size: 20px; line-height: 1.6; font-weight: 700">"지능은 이제<br>흔한 상품이다.<br><span style="color: #FBCFE8">가장 중요한 것은<br>인간성이다.</span>"</div>
+    <div style="font-size: 13px; color: #FCE7F3">젠슨 황 · 유퀴즈 출연 장면 (교안)</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #F5D5E3; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 12px">
+    <div style="font-size: 17px; font-weight: 900">왜 사회성일까요?</div>
+    <div style="font-size: 34px; font-weight: 900; color: #BE185D; letter-spacing: -0.01em; line-height: 1.2">Complexity</div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">앞으로의 문제는 점점 <b style="color: #0F1B3D">복잡</b>해져서 혼자서는 풀 수 없고, <b style="color: #0F1B3D">함께 풀어야</b> 합니다. 그래서 복잡성을 다룰 마음과 사회성이 필요합니다.</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #F5D5E3; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 12px">
+    <div style="font-size: 17px; font-weight: 900">"똑똑한 외톨이의 몰락"</div>
+    <div style="font-size: 13.5px; line-height: 1.6; color: #475569">하버드대 데이비드 데밍 교수 · 직업을 두 축으로 나눠 보면</div>
+
+    <div style="display: grid; grid-template-columns: 52px repeat(2, minmax(0, 1fr)); gap: 6px; align-items: stretch">
+      <div></div>
+      <div style="text-align: center; font-size: 12.5px; font-weight: 700; color: #475569; padding: 4px 0">사회성<br>낮음</div>
+      <div style="text-align: center; font-size: 12.5px; font-weight: 700; color: #BE185D; padding: 4px 0">사회성<br>높음</div>
+
+      <div style="display: flex; align-items: center; font-size: 12.5px; font-weight: 700; color: #475569; line-height: 1.4">혼자<br>하는 일</div>
+      <div style="background: #FEE2E2; border-radius: 14px; padding: 12px 10px; min-height: 130px; box-sizing: border-box; font-size: 13px; line-height: 1.55; color: #7F1D1D"><b style="font-size: 13.5px">AI 대체 위험 높음</b><br>컴퓨터 앞에서 혼자 하는 코딩·회계 같은 일</div>
+      <div style="background: #FCE7F3; border-radius: 14px; padding: 12px 10px; min-height: 130px; box-sizing: border-box; font-size: 13px; line-height: 1.55; color: #831843"><b style="font-size: 13.5px">AI가 대체하기 어려움</b><br>상담처럼 감정을 나누는 일</div>
+
+      <div style="display: flex; align-items: center; font-size: 12.5px; font-weight: 700; color: #475569; line-height: 1.4">함께<br>하는 일</div>
+      <div style="background: #F1F5F9; border-radius: 14px; padding: 12px 10px; min-height: 90px; box-sizing: border-box; font-size: 12.5px; line-height: 1.55; color: #64748B">강의에서<br>따로 언급하지 않음</div>
+      <div style="background: #F1F5F9; border-radius: 14px; padding: 12px 10px; min-height: 90px; box-sizing: border-box; font-size: 12.5px; line-height: 1.55; color: #64748B">강의에서<br>따로 언급하지 않음</div>
+    </div>
+    <div style="font-size: 12.5px; line-height: 1.6; color: #475569">※ 교수님의 강의 설명을 단순화한 도식입니다.</div>
+
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">상담은 사람과 <b style="color: #0F1B3D">감정을 공유</b>하는 과정에서 회복의 힘이 생깁니다. AI가 대신하기 어려운 부분입니다.</div>
+  </div>
+
+  <div style="background: #FCE7F3; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 12.5px; font-weight: 700; color: #BE185D; letter-spacing: 0.08em">HUMANITY</div>
+    <div style="font-size: 17px; font-weight: 900; color: #831843; line-height: 1.5; margin-top: -8px">언어를 넘어 인문소양을 키우는 교육</div>
+    <div style="display: flex; align-items: center; gap: 8px">
+      <div style="flex: 1; background: #FFFFFF; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 700; color: #475569; line-height: 1.5">지루한<br>고전</div>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#BE185D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      <div style="flex: 1; background: #BE185D; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 900; color: #FFFFFF; line-height: 1.5">게임·활동으로<br>바꾼 고전</div>
+    </div>
+    <div style="background: #FFFFFF; border-radius: 14px; padding: 16px; font-size: 15px; line-height: 1.7; font-weight: 500; color: #831843">우리 학원은 단순한 언어학원이 아니라<br><b>"좋은 사람을 키우는 곳"</b>이어야 합니다.</div>
+  </div>
+</div></section>
+<section aria-label="Grit"><div style="width: 100%; box-sizing: border-box; padding: 36px 20px 40px; background: #F5F6FF; color: #0F1B3D; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; display: flex; flex-direction: column; gap: 16px">
+
+  <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 4px 8px">
+    <div style="font-size: 13px; font-weight: 700; color: #4338CA">07 · 네 번째 이야기 ②</div>
+    <h2 style="margin: 0; font-size: 30px; line-height: 1.35; font-weight: 900">끈기<br>마부작침의 마음</h2>
+    <div style="font-size: 15px; line-height: 1.65; color: #475569">중요한 것은 <b style="color: #0F1B3D">꺾이지 않는 마음</b>입니다.</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DDE0F7; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 17px; font-weight: 900">마부작침(磨斧作針)</div>
+    <div style="display: flex; gap: 14px; align-items: flex-start">
+      <span style="flex: none; width: 30px; height: 30px; border-radius: 50%; background: #4338CA; color: #FFFFFF; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center">1</span>
+      <div style="font-size: 14.5px; line-height: 1.6; padding-top: 3px">이태백이 공부를 포기하고 산을 내려옵니다.</div>
+    </div>
+    <div style="display: flex; gap: 14px; align-items: flex-start">
+      <span style="flex: none; width: 30px; height: 30px; border-radius: 50%; background: #4338CA; color: #FFFFFF; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center">2</span>
+      <div style="font-size: 14.5px; line-height: 1.6; padding-top: 3px">도끼를 갈아 바늘을 만들려는 노인을 만납니다.</div>
+    </div>
+    <div style="display: flex; gap: 14px; align-items: flex-start">
+      <span style="flex: none; width: 30px; height: 30px; border-radius: 50%; background: #4338CA; color: #FFFFFF; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center">3</span>
+      <div style="font-size: 14.5px; line-height: 1.6; padding-top: 3px">깨달음을 얻고 다시 산으로 돌아갑니다.</div>
+    </div>
+  </div>
+
+  <div style="background: #312E81; color: #FFFFFF; border-radius: 20px; padding: 24px 20px; display: flex; flex-direction: column; gap: 14px">
+    <div style="font-size: 12.5px; font-weight: 700; color: #C7D2FE">마부작침이냐, 타고난 능력이냐?</div>
+    <div style="font-size: 17px; line-height: 1.75; font-weight: 500">"어떤 문제에 부딪히면 나는 미리 남보다 시간을 <b style="color: #C7D2FE">두세 곱절</b> 더 투자할 각오를 한다. 그것이야말로 평범한 두뇌를 가진 내가 할 수 있는 유일한 방법이다."</div>
+    <div style="font-size: 13px; line-height: 1.6; color: #E0E7FF">히로나카 헤이스케 교수 · 『학문의 즐거움』 (교안)<br>허준이 교수의 멘토</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DDE0F7; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 12px">
+    <div style="font-size: 17px; font-weight: 900">카탈린 커리코 <span style="font-size: 12.5px; font-weight: 500; color: #475569">2023 노벨 생리의학상</span></div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">천재라서가 아니라, 어려움 속에서도 <b style="color: #0F1B3D">포기하지 않고</b> 자기 관심 분야에 도전해 인정받은 사례로 소개되었습니다.</div>
+    <div style="display: flex; align-items: center; gap: 8px">
+      <div style="flex: 1; background: #F1F5F9; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 700; color: #475569; line-height: 1.5">어려우면<br>쉽게 포기</div>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4338CA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      <div style="flex: 1; background: #4338CA; border-radius: 14px; padding: 14px 6px; text-align: center; font-size: 14px; font-weight: 900; color: #FFFFFF; line-height: 1.5">긴 호흡의<br>도전 경험</div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">요즘 아이들은 어려우면 쉽게 포기합니다. 학원이 <b style="color: #0F1B3D">끝까지 해 본 경험</b>을 줄 수 있습니다.</div>
+  </div>
+
+  <div style="background: #EEF2FF; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div>
+      <div style="font-size: 12.5px; font-weight: 700; color: #4338CA; letter-spacing: 0.04em">LEVEL UP CHALLENGE</div>
+      <div style="font-size: 20px; font-weight: 900; color: #312E81; margin-top: 4px">중꺾마 영어 프로젝트 4가지</div>
+      <div style="font-size: 13px; color: #475569; margin-top: 4px">중요한 것은 꺾이지 않는 마음</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+      <div style="background: #FFFFFF; border-radius: 16px; padding: 16px 12px; display: flex; flex-direction: column; gap: 8px">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4338CA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg>
+        <div style="font-size: 14.5px; font-weight: 900; line-height: 1.45">영어 스피치<br>성장 프로젝트</div>
+        <div style="font-size: 13px; line-height: 1.6; color: #475569">"처음에는 30초도 어려웠지만"</div>
+      </div>
+      <div style="background: #FFFFFF; border-radius: 16px; padding: 16px 12px; display: flex; flex-direction: column; gap: 8px">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4338CA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2V5z"/><path d="M8 7h6"/></svg>
+        <div style="font-size: 14.5px; font-weight: 900; line-height: 1.45">영어책 한 권<br>완독 프로젝트</div>
+        <div style="font-size: 13px; line-height: 1.6; color: #475569">"끝까지 읽어낸 경험"</div>
+      </div>
+      <div style="background: #FFFFFF; border-radius: 16px; padding: 16px 12px; display: flex; flex-direction: column; gap: 8px">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4338CA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9h8"/><path d="M8 12h5"/></svg>
+        <div style="font-size: 14.5px; font-weight: 900; line-height: 1.45">영어<br>인터뷰 도전</div>
+        <div style="font-size: 13px; line-height: 1.6; color: #475569">"질문하지 못하던 내가 인터뷰를 하다"</div>
+      </div>
+      <div style="background: #FFFFFF; border-radius: 16px; padding: 16px 12px; display: flex; flex-direction: column; gap: 8px">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4338CA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h13v10H3z"/><path d="M16 11l5-3v8l-5-3"/></svg>
+        <div style="font-size: 14.5px; font-weight: 900; line-height: 1.45">영어 연극·<br>영상 제작</div>
+        <div style="font-size: 13px; line-height: 1.6; color: #475569">"실패해도 다시 무대에 서기"</div>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.65; color: #312E81">
+      <div>부담 없이 시작합니다. 단어 하나 → 단어 연결 → 문장으로 늘립니다.</div>
+      <div>문법에 얽매이지 않고, 중간에 계속 격려하고 서로 공유합니다.</div>
+    </div>
+    <div style="background: #FFFFFF; border-radius: 14px; padding: 16px; font-size: 15px; line-height: 1.7; font-weight: 500; color: #312E81">학생이 <b>"선생님이 나를 진짜 아끼고 성장시키려 하신다"</b>고 느끼게 하는 것이 핵심입니다.</div>
+  </div>
+</div></section>
+<section aria-label="QA"><div style="width: 100%; box-sizing: border-box; padding: 36px 20px 40px; background: #F4F8FC; color: #0F1B3D; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; display: flex; flex-direction: column; gap: 16px">
+
+  <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 4px 8px">
+    <div style="font-size: 13px; font-weight: 700; color: #0369A1">08 · 질의응답 요지</div>
+    <h2 style="margin: 0; font-size: 30px; line-height: 1.35; font-weight: 900">현장에서<br>바로 쓰는 답변</h2>
+    <div style="font-size: 15px; line-height: 1.65; color: #475569">수업과 학부모 상담에 바로 쓸 수 있는<br>세 가지 질문입니다.</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="display: flex; gap: 10px; align-items: flex-start">
+      <span style="flex: none; background: #0F1B3D; color: #FFFFFF; font-size: 13px; font-weight: 900; padding: 4px 10px; border-radius: 99px">Q1</span>
+      <div style="font-size: 16px; font-weight: 900; line-height: 1.5">문해력이 너무 넓은데, 어떻게 기르나요?</div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">본질은 <b style="color: #0F1B3D">경험의 의미를 스스로 이해하고, 평가하고, 새로운 결과로 확장하는 사고력</b>입니다. 독서는 그중 하나입니다.</div>
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <div style="display: flex; align-items: center; gap: 12px; background: #E0F2FE; border-radius: 14px; padding: 12px 14px"><b style="color: #0369A1; font-size: 15px">1</b><span style="font-size: 14px; line-height: 1.55; color: #0C4A6E">천천히 깊이 읽기</span></div>
+      <div style="display: flex; align-items: center; gap: 12px; background: #E0F2FE; border-radius: 14px; padding: 12px 14px"><b style="color: #0369A1; font-size: 15px">2</b><span style="font-size: 14px; line-height: 1.55; color: #0C4A6E">읽은 뒤 생각 나누기</span></div>
+      <div style="display: flex; align-items: center; gap: 12px; background: #E0F2FE; border-radius: 14px; padding: 12px 14px"><b style="color: #0369A1; font-size: 15px">3</b><span style="font-size: 14px; line-height: 1.55; color: #0C4A6E">팀을 나눠 모의 토론<br>(이겼는지보다 질문을 많이 했는지 칭찬)</span></div>
+      <div style="display: flex; align-items: center; gap: 12px; background: #E0F2FE; border-radius: 14px; padding: 12px 14px"><b style="color: #0369A1; font-size: 15px">4</b><span style="font-size: 14px; line-height: 1.55; color: #0C4A6E">게임처럼 재미있게, 작은 보상(예: 피자)</span></div>
+    </div>
+    <div style="background: #0F1B3D; color: #FFFFFF; border-radius: 14px; padding: 14px; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; font-weight: 700; flex-wrap: wrap">
+      <span>마음</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7DD3FC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      <span>생각</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7DD3FC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      <span>노력</span>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">마음이 먼저 움직여야 합니다. 억지로 시키면 노동이 됩니다.<br>예) "등장인물 중 한 명을 뺀다면 누구? 왜?"</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="display: flex; gap: 10px; align-items: flex-start">
+      <span style="flex: none; background: #0F1B3D; color: #FFFFFF; font-size: 13px; font-weight: 900; padding: 4px 10px; border-radius: 99px">Q2</span>
+      <div style="font-size: 16px; font-weight: 900; line-height: 1.5">중학생·반항기 학생에게도 통할까요?</div>
+    </div>
+    <div style="background: #E0F2FE; border-radius: 14px; padding: 16px; font-size: 15px; line-height: 1.7; color: #0C4A6E"><b>통합니다.</b><br>핵심은 교사의 <b>진심</b>과, 일에 대한 <b>가치·열정</b>입니다.</div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">한두 번 반응이 없다고 포기하면, 아이들은 금방 알아채고 마음을 닫습니다.</div>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #DCE6F2; border-radius: 20px; padding: 20px 16px; display: flex; flex-direction: column; gap: 14px">
+    <div style="display: flex; gap: 10px; align-items: flex-start">
+      <span style="flex: none; background: #0F1B3D; color: #FFFFFF; font-size: 13px; font-weight: 900; padding: 4px 10px; border-radius: 99px">Q3</span>
+      <div style="font-size: 16px; font-weight: 900; line-height: 1.5">정독 vs 다독, 학부모는 다독을 원하세요.</div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">부모님께 이렇게 물어보라고 하셨습니다. "다섯 권을 읽는다면, 어느 쪽이 아이가 <b style="color: #0F1B3D">자기 이야기를 하고 싶어지게</b> 할까요?"</div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+      <div style="background: #E0F2FE; border: 2px solid #0369A1; border-radius: 14px; padding: 14px 12px; font-size: 13.5px; line-height: 1.6; color: #0C4A6E"><b style="font-size: 15px">① 한 주제</b><br>서로 다른 책 5권<br><b style="color: #0369A1">자기 이야기를 하고 싶어짐</b></div>
+      <div style="background: #F1F5F9; border-radius: 14px; padding: 14px 12px; font-size: 13.5px; line-height: 1.6; color: #475569; border: 2px solid transparent"><b style="font-size: 15px; color: #0F1B3D">② 여러 주제</b><br>주제마다 1권씩 5권<br>얕게 스치기 쉬움</div>
+    </div>
+    <div style="font-size: 14px; line-height: 1.65; color: #475569">답은 <b style="color: #0F1B3D">① 한 주제 깊이 읽기</b>입니다. 관심이 관련 분야로 자연스럽게 넓어지고, 읽는 즐거움과 성찰의 기쁨이 커집니다.</div>
+    <div style="background: #0F1B3D; color: #FFFFFF; border-radius: 14px; padding: 16px; font-size: 14.5px; line-height: 1.7">얕게 많이, 빨리 읽는 것보다<br><b style="color: #7DD3FC">어릴 때부터 깊이 읽고 자기 이야기를 하는 경험</b>이 훨씬 중요합니다. 정독 수업은 잘하고 계신 방향이라는 격려도 있었습니다.</div>
+  </div>
+</div></section>
+<section aria-label="Chance"><div style="width: 100%; box-sizing: border-box; padding: 40px 20px 36px; background: #0F1B3D; color: #FFFFFF; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; display: flex; flex-direction: column; gap: 20px">
+
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; padding: 12px 0 8px">
+    <div style="font-size: 13px; font-weight: 700; color: #7DD3FC; letter-spacing: 0.08em">TIME FOR CHANGE</div>
+    <div style="font-size: 48px; font-weight: 900; line-height: 1.15">Chan<span style="color: #FCA5A5">g</span>e</div>
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7DD3FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M6 13l6 6 6-6"/></svg>
+    <div style="font-size: 13px; color: #CBD5E1">g를 c로 바꾸면</div>
+    <div style="font-size: 48px; font-weight: 900; line-height: 1.15">Chan<span style="color: #7DD3FC">c</span>e</div>
+    <div style="font-size: 15.5px; line-height: 1.75; color: #E2E8F0; margin-top: 8px">변화의 시기에 무엇이 필요한지<br>먼저 고민하고 준비하면 <b style="color: #FFFFFF">기회</b>가 됩니다.<br>그 기회는 <b style="color: #7DD3FC">나만의 생각(철학)을<br>실제 프로그램으로 녹여 내는 것</b>에 있습니다.</div>
+  </div>
+
+  <div style="background: #FFFFFF; color: #0F1B3D; border-radius: 20px; padding: 22px 16px; display: flex; flex-direction: column; gap: 4px">
+    <div style="font-size: 12.5px; font-weight: 700; color: #0369A1">09 · 실천</div>
+    <div style="font-size: 20px; font-weight: 900; margin-bottom: 8px">영어학원 적용 체크리스트</div>
+
+    <label style="display: flex; gap: 12px; align-items: flex-start; padding: 13px 0; border-top: 1px solid #E5EDF6; font-size: 14.5px; line-height: 1.6; cursor: pointer"><input type="checkbox" style="flex: none; width: 22px; height: 22px; margin: 2px 0 0; accent-color: #0369A1"><span>수업을 <b>질문(Why · How · What if)</b>으로 시작한다</span></label>
+    <label style="display: flex; gap: 12px; align-items: flex-start; padding: 13px 0; border-top: 1px solid #E5EDF6; font-size: 14.5px; line-height: 1.6; cursor: pointer"><input type="checkbox" style="flex: none; width: 22px; height: 22px; margin: 2px 0 0; accent-color: #0369A1"><span>읽기 후 <b>생각 나누기·미니 디베이트</b>를 넣는다</span></label>
+    <label style="display: flex; gap: 12px; align-items: flex-start; padding: 13px 0; border-top: 1px solid #E5EDF6; font-size: 14.5px; line-height: 1.6; cursor: pointer"><input type="checkbox" style="flex: none; width: 22px; height: 22px; margin: 2px 0 0; accent-color: #0369A1"><span><b>한 주제를 깊이</b> 읽는 독서 코스를 만든다</span></label>
+    <label style="display: flex; gap: 12px; align-items: flex-start; padding: 13px 0; border-top: 1px solid #E5EDF6; font-size: 14.5px; line-height: 1.6; cursor: pointer"><input type="checkbox" style="flex: none; width: 22px; height: 22px; margin: 2px 0 0; accent-color: #0369A1"><span>정확성 강박을 내려놓고 <b>말하는 즐거움</b>을 준다 (필요하면 우리말도 허용)</span></label>
+    <label style="display: flex; gap: 12px; align-items: flex-start; padding: 13px 0; border-top: 1px solid #E5EDF6; font-size: 14.5px; line-height: 1.6; cursor: pointer"><input type="checkbox" style="flex: none; width: 22px; height: 22px; margin: 2px 0 0; accent-color: #0369A1"><span><b>중꺾마 프로젝트</b>를 1개 이상 운영한다</span></label>
+    <label style="display: flex; gap: 12px; align-items: flex-start; padding: 13px 0; border-top: 1px solid #E5EDF6; font-size: 14.5px; line-height: 1.6; cursor: pointer"><input type="checkbox" style="flex: none; width: 22px; height: 22px; margin: 2px 0 0; accent-color: #0369A1"><span>학부모와 <b>"좋은 사람을 키우는 학원"</b>이라는 목적을 공유한다</span></label>
+  </div>
+
+  <div style="text-align: center; font-size: 12.5px; line-height: 1.7; color: #CBD5E1">SNU 영어교육마스터과정 4기 제1강<br>신종호 교수님 특강 요약 정리본 · 배포금지</div>
+</div></section>
+</main>
+<button id="top" type="button" aria-label="맨 위로"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7DD3FC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg></button>
+<script>
+(function(){
+  var d=document,de=d.documentElement,bar=d.getElementById('bar'),top=d.getElementById('top');
+  de.classList.add('js');
+  function upd(){
+    var h=de.scrollHeight-innerHeight,y=pageYOffset||de.scrollTop;
+    bar.style.width=(h>0?Math.min(100,y/h*100):0)+'%';
+    top.classList.toggle('on',y>700);
+  }
+  addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+  top.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});
+  var els=d.querySelectorAll('section>div>div');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px',threshold:0.05});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+})();
+</script>
+</body>
+</html>
